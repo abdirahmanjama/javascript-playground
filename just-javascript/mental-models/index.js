@@ -82,10 +82,20 @@ function duplicateSpreadsheet(original) {
  * 
  * The function getPrimitiveValue shows a list of primitive values in JS. 
  * 
- * Objects in JavaScript however, are a 
+ * Objects in JavaScript however, are a collection of key value pairs, we can define objects in javascript by using a simple object initlisation / literal syntax. 
+ * Objects in JS are conceptually similar to hash maps in Java, dictionaries in Python. It allows us to obtain values in constant O(1) time.
+ * 
+ * We've defined an example object below. 
+ * 
+ * The reason duplicate spreadsheet function from before edited the original spreadsheet is because objects in javascript are mutable. 
  */
 
 function getPrimitiveValue() {
     const data = [1, "hi", true, null, undefined, Symbol("foo"), BigInt(91291281298192812)];
     return data[Math.floor(Math.random() * data.length)]
+}
+
+const obj = {
+    prop1: 'lol',
+    prop2: 'haha'
 }
