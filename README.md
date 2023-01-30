@@ -8,5 +8,4 @@ This is a sandbox environment to play around with different JavaScript concepts 
 
 
 
-This project requires Node. You can download Node here.
-`
+This project requires Node. You can download Node [here](https://nodejs.org/en/download/).
