@@ -35,6 +35,10 @@ function exampleOne() {
  * Thinking fast and slow
  * 
  * When coding/thinking we usually two thinking models. 
+ * 
+ * Thinking fast revolves around using human instict, pattern matching and gut reactions. 
+ * Whereas thinking slow often revolves around reading things step by step in a methodical manner - this helps with breaking complex things down.
+ * 
  */
 
 function duplicateSpreadsheet(original) {
@@ -54,5 +58,34 @@ function duplicateSpreadsheet(original) {
 }
 
 /**
- * Slow
+ * After reading the function above, we may notice that:
+ * 1. it duplicates a spreadsheet
+ * 2. throws an error if original hasn't been saved
+ * 3. returns a copy
+ * 
+ * But if you look carefully, you'll notice that this function actually modfiies the original object. 
+ * 
+ * 
  */
+
+/**
+ * Data types in JavaScript: 
+ * 
+ * In JavaScript we have two sets of data types: 
+ * - Primitive values
+ * - Objects
+ * 
+ * A primitive value has the following properties: 
+ * 1. They aren't objects
+ * 2. They do not have methods
+ * 3. They are immutable
+ * 
+ * The function getPrimitiveValue shows a list of primitive values in JS. 
+ * 
+ * Objects in JavaScript however, are a 
+ */
+
+function getPrimitiveValue() {
+    const data = [1, "hi", true, null, undefined, Symbol("foo"), BigInt(91291281298192812)];
+    return data[Math.floor(Math.random() * data.length)]
+}
