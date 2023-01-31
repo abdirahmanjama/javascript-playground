@@ -11,3 +11,6 @@ function validDate(date) {
     }
     throw Error('Invalid date')
 }
+
+
+console.log(validDate(1212))
